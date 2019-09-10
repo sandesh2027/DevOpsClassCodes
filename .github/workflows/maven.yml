@@ -18,4 +18,12 @@ jobs:
     - name: git latest
       run: apt-get install git
     - name : git clonning
-     
+      run: git clone https://github.com/sandesh2027/DevOpsClassCodes/
+    - name : copy 
+      run : cp /home/runner/work/DevOpsClassCodes/DevOpsClassCodes/target/addressbook.war DevOpsClassCodes/
+    - name : change directory
+      run: cd DevOpsClassCodes
+    - name : git add and commit
+      run : git add . && git commit -m "commit msg"
+    - name : git push
+      run : git push https://2c6e85bad8857d93b05bb726f07254c951b8536c@https://github.com/sandesh2027/DevOpsClassCodes.git
