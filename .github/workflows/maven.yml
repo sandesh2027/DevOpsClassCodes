@@ -16,8 +16,8 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: git latest
-      run: apt-get install git
-    - name : git clonning
+      run: sudo apt-get install git
+    - name : git clone
       run: git clone https://github.com/sandesh2027/DevOpsClassCodes/
     - name : copy 
       run : cp /home/runner/work/DevOpsClassCodes/DevOpsClassCodes/target/addressbook.war DevOpsClassCodes/
